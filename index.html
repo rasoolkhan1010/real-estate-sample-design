@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prime Estates</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">Prime Estates</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#properties">Properties</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Find Your Dream Home</h1>
+      <p>Luxury villas, apartments & commercial spaces</p>
+
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search property type...">
+        <button onclick="searchProperty()">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROPERTIES -->
+  <section class="properties" id="properties">
+    <h2>Featured Properties</h2>
+
+    <div class="property-grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994">
+        <h3>Luxury Villa</h3>
+        <p>₹1.2 Crore</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c">
+        <h3>Modern Apartment</h3>
+        <p>₹75 Lakhs</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae">
+        <h3>Commercial Office</h3>
+        <p>₹2.5 Crore</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+      Prime Estates is a trusted real estate company helping clients buy,
+      sell and rent premium properties with transparency and professionalism.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Prime Estates. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
